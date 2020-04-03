@@ -5,7 +5,7 @@ class questionComponent extends React.Component {
     return (
       <div>
         <div className="row justify-content-center">
-          <div className="col-6">
+          <div className="col-md-6 col-sm-12">
             <input
               onInput={this.props.setInputValue}
               type="text"
@@ -13,7 +13,7 @@ class questionComponent extends React.Component {
               placeholder="Type your question here"
             />
           </div>
-          <div className="col-2 pt-1">
+          <div className="col-md-2 col-sm-12 pt-2 text-mobile-right">
             <button
               disabled={this.props.inputValue ? "" : "disabled"}
               className="btn-primary btn"
@@ -24,9 +24,8 @@ class questionComponent extends React.Component {
             </button>
           </div>
         </div>
-        <div className="row mt-2">
-          <div className="col-2"></div>
-          <div className="col-6">
+        <div className="row justify-content-center mt-4">
+          <div className="col-md-6 col-sm-8">
             {this.props.imageUrl ? (
               <img
                 style={{ maxHeight: "350px" }}
@@ -38,7 +37,7 @@ class questionComponent extends React.Component {
               ""
             )}
           </div>
-          <div className="col-2 ">
+          <div className="col-md-2 col-sm-2 ">
             <div className="row h-100 align-items-center">
               <div className="col-12">
                 <h1

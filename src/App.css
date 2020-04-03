@@ -9,11 +9,18 @@ body {
   transition-duration: 1.99s;
   transition-property: transform;
 }
-.rotationClass {
-  transform: rotate3d(10, 0, 0, 1440deg);
+@media (min-width: 767px) {
+  .rotationClass {
+    transform: rotate3d(10, 0, 0, 1440deg);
+  }
 }
 html,
 body {
   margin: 0;
   height: 100%;
+}
+@media (max-width: 767px) {
+  .text-mobile-right {
+    text-align: right;
+  }
 }
