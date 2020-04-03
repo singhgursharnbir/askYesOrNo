@@ -6,14 +6,10 @@ body {
   background-color: #343a40;
   border: 2px solid #818fa9 !important;
   border-radius: 30px;
-  transition-duration: 1.99s;
-  transition-property: transform;
+  /* transition-duration: 1.99s;
+  transition-property: transform; */
 }
-@media (min-width: 767px) {
-  .rotationClass {
-    transform: rotate3d(10, 0, 0, 1440deg);
-  }
-}
+/* s */
 html,
 body {
   margin: 0;
