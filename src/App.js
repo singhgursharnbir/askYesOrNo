@@ -69,7 +69,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         {/* <Loader /> */}
-        <div className="row h-100">
+        <div className="row h-100  ">
           <div
             ref={this.mainDiv}
             className={

@@ -1,19 +1,8 @@
-body {
-  background-image: url("./universe.jpg");
-  background-size: cover;
-}
-.mainBackground {
-  background-color: #343a40;
-  border: 2px solid #818fa9 !important;
-  border-radius: 30px;
-  transition-duration: 1.99s;
-  transition-property: transform;
-}
-
 html,
 body {
   margin: 0;
   height: 100%;
+  background-color: #343a40 !important;
 }
 @media (max-width: 767px) {
   .text-mobile-right {
