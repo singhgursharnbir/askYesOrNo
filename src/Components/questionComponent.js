@@ -33,11 +33,7 @@ class questionComponent extends React.Component {
                 alt="giphy"
               />
             ) : (
-              <img
-                className="w-100 height300"
-                src="https://media.giphy.com/media/l3DdrXKGnq2RdEnde/giphy.gif"
-                alt="giphy"
-              />
+              ""
             )}
           </div>
           <div className="col-md-2 col-sm-2 ">

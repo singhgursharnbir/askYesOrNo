@@ -74,8 +74,8 @@ class App extends React.Component {
             ref={this.mainDiv}
             className={
               this.state.active
-                ? "col-md-10 col-sm-8 m-4 mainBackground  rotationClass"
-                : "col-md-10 col-sm-8 m-4 mainBackground "
+                ? "col-md-12 col-sm-8 m-4 mainBackground  rotationClass"
+                : "col-md-12 col-sm-8 m-4 mainBackground "
             }
           >
             <Header />
@@ -87,10 +87,7 @@ class App extends React.Component {
               setInputValue={this.setInputValue}
               inputValue={this.state.value}
             />
-            <div className="mt-2">
-              {" "}
-              <Footer />{" "}
-            </div>
+            <div className="mt-2">{this.state.imageUrl ? <Footer /> : ""}</div>
           </div>
         </div>
       </React.Fragment>
