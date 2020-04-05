@@ -81,6 +81,7 @@ class App extends React.Component {
             <Header />
             <Description />
             <QuestionComponent
+              className="row"
               yesOrNo={this.state.yesOrNo}
               rotateElement={this.rotateElement}
               imageUrl={this.state.imageUrl}
