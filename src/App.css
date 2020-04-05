@@ -8,15 +8,9 @@ body {
   .text-mobile-right {
     text-align: right;
   }
-  .imageMobile300 {
-    max-height: 150px !important;
-    max-width: 250px !important;
-  }
-}
-.rotationClass {
-  transform: rotate3d(10, 0, 0, 1440deg);
 }
 
+/* loader css */
 .center {
   z-index: 1000;
   margin: auto;
@@ -39,7 +33,4 @@ div.loader {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 10px;
-}
-.image300 {
-  max-height: 300px;
 }
