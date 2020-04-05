@@ -1,6 +1,6 @@
 body {
-  /* background-image: url("./universe.jpg");
-  background-size: contain; */
+  background-image: url("./universe.jpg");
+  background-size: contain;
 }
 .mainBackground {
   background-color: #343a40;
@@ -48,5 +48,5 @@ div.loader {
   margin-bottom: 10px;
 }
 .image300 {
-  height: 300px;
+  max-height: 300px;
 }
