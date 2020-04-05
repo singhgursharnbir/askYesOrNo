@@ -30,13 +30,13 @@ class questionComponent extends React.Component {
           <div className="col-md-6 col-sm-8">
             {this.props.imageUrl ? (
               <img
-                className="w-100 img-responsive img-fluid image300"
+                className="w-100 img-responsive img-fluid image300 imageMobile300"
                 src={this.props.imageUrl}
                 alt="giphy"
               />
             ) : (
               <img
-                className="w-100 img-responsive img-fluid image300"
+                className="w-100 img-responsive img-fluid image300 imageMobile300"
                 src="https://media.giphy.com/media/l3DdrXKGnq2RdEnde/giphy.gif"
                 alt="giphy"
               />

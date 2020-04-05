@@ -19,8 +19,9 @@ body {
   .text-mobile-right {
     text-align: right;
   }
-  .image300 {
-    max-height: 100px;
+  .imageMobile300 {
+    max-height: 150px !important;
+    max-width: 250px !important;
   }
 }
 .rotationClass {
