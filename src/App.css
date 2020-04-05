@@ -6,10 +6,10 @@ body {
   background-color: #343a40;
   border: 2px solid #818fa9 !important;
   border-radius: 30px;
-  /* transition-duration: 1.99s;
-  transition-property: transform; */
+  transition-duration: 1.99s;
+  transition-property: transform;
 }
-/* s */
+
 html,
 body {
   margin: 0;
@@ -19,4 +19,34 @@ body {
   .text-mobile-right {
     text-align: right;
   }
+}
+.rotationClass {
+  transform: rotate3d(10, 0, 0, 1440deg);
+}
+.height300 {
+  height: 300px;
+}
+
+.center {
+  z-index: 1000;
+  margin: auto;
+  width: 50%;
+  max-width: 400px;
+  min-width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+div.loader {
+  font-size: 100px;
+  color: yellow;
+  text-align: center;
+}
+
+.loaded {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
 }

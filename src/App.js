@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Description from "./Components/description";
 import QuestionComponent from "./Components/questionComponent";
 import Footer from "./Components/Footer";
+import Loader from "./Components/Loader";
 
 class App extends React.Component {
   constructor(props) {
@@ -13,7 +14,8 @@ class App extends React.Component {
       active: false,
       yesOrNo: "",
       imageUrl: "",
-      value: ""
+      value: "",
+      loading: true
     };
   }
   rotateElement = () => {
@@ -62,9 +64,11 @@ class App extends React.Component {
   setInputValue = e => {
     this.setState({ value: e.target.value });
   };
+
   render() {
     return (
       <React.Fragment>
+        {/* <Loader /> */}
         <div className="row h-100 justify-content-center align-items-center ">
           <div
             ref={this.mainDiv}
@@ -83,7 +87,10 @@ class App extends React.Component {
               setInputValue={this.setInputValue}
               inputValue={this.state.value}
             />
-            <div className="mt-2">{this.state.imageUrl ? <Footer /> : ""}</div>
+            <div className="mt-2">
+              {" "}
+              <Footer />{" "}
+            </div>
           </div>
         </div>
       </React.Fragment>
