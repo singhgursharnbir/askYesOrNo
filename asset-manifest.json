@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/reactAskUniverse/static/css/main.2ddcca98.chunk.css",
+    "main.js": "/reactAskUniverse/static/js/main.8f7e892c.chunk.js",
+    "main.js.map": "/reactAskUniverse/static/js/main.8f7e892c.chunk.js.map",
+    "runtime-main.js": "/reactAskUniverse/static/js/runtime-main.44860a90.js",
+    "runtime-main.js.map": "/reactAskUniverse/static/js/runtime-main.44860a90.js.map",
+    "static/css/2.de424728.chunk.css": "/reactAskUniverse/static/css/2.de424728.chunk.css",
+    "static/js/2.a4f340e7.chunk.js": "/reactAskUniverse/static/js/2.a4f340e7.chunk.js",
+    "static/js/2.a4f340e7.chunk.js.map": "/reactAskUniverse/static/js/2.a4f340e7.chunk.js.map",
+    "index.html": "/reactAskUniverse/index.html",
+    "precache-manifest.de7cba1b4c1470e8b5e517b6f7c91146.js": "/reactAskUniverse/precache-manifest.de7cba1b4c1470e8b5e517b6f7c91146.js",
+    "service-worker.js": "/reactAskUniverse/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/reactAskUniverse/static/css/2.de424728.chunk.css.map",
+    "static/css/main.2ddcca98.chunk.css.map": "/reactAskUniverse/static/css/main.2ddcca98.chunk.css.map",
+    "static/js/2.a4f340e7.chunk.js.LICENSE.txt": "/reactAskUniverse/static/js/2.a4f340e7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.44860a90.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.a4f340e7.chunk.js",
+    "static/css/main.2ddcca98.chunk.css",
+    "static/js/main.8f7e892c.chunk.js"
+  ]
+}
