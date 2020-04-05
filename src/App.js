@@ -4,7 +4,6 @@ import Header from "./Components/Header";
 import Description from "./Components/description";
 import QuestionComponent from "./Components/questionComponent";
 import Footer from "./Components/Footer";
-import Loader from "./Components/Loader";
 
 class App extends React.Component {
   constructor(props) {
@@ -15,7 +14,7 @@ class App extends React.Component {
       yesOrNo: "",
       imageUrl: "",
       value: "",
-      loading: true
+      loading: false
     };
   }
   rotateElement = () => {
@@ -47,6 +46,9 @@ class App extends React.Component {
     }, 2000);
   };
   fetchImage = thisRandom => {
+    this.setState({
+      loading: true
+    });
     fetch(
       `https://api.giphy.com/v1/gifs/search?q=${thisRandom}&api_key=R1xlrTlzaEYYQvoJVDEmft0ortyXKIP1`
     )
@@ -68,7 +70,6 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        {/* <Loader /> */}
         <div className="row h-100  ">
           <div
             ref={this.mainDiv}
@@ -81,12 +82,12 @@ class App extends React.Component {
             <Header />
             <Description />
             <QuestionComponent
-              className="row"
               yesOrNo={this.state.yesOrNo}
               rotateElement={this.rotateElement}
               imageUrl={this.state.imageUrl}
               setInputValue={this.setInputValue}
               inputValue={this.state.value}
+              loading={this.state.loading}
             />
             <div className="mt-2">{this.state.imageUrl ? <Footer /> : ""}</div>
           </div>

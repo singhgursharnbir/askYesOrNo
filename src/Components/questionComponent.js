@@ -1,5 +1,5 @@
 import React from "react";
-
+import Loader from "./Loader";
 class questionComponent extends React.Component {
   render() {
     return (
@@ -36,12 +36,15 @@ class questionComponent extends React.Component {
                 alt="giphy"
               />
             ) : (
-              <img
-                style={{ maxHeight: "350px" }}
-                className="w-100 img-responsive img-fluid "
-                src="https://media.giphy.com/media/l3DdrXKGnq2RdEnde/giphy.gif"
-                alt="giphy"
-              />
+              <div>
+                {this.props.loading ? <Loader /> : ""}
+                <img
+                  style={{ maxHeight: "350px" }}
+                  className="w-100 img-responsive img-fluid "
+                  src="https://media.giphy.com/media/l3DdrXKGnq2RdEnde/giphy.gif"
+                  alt="giphy"
+                />
+              </div>
             )}
           </div>
           <div className="col-md-2 col-sm-12 ">
