@@ -28,7 +28,8 @@ class questionComponent extends React.Component {
           <div className="col-md-6 col-sm-8">
             {this.props.imageUrl ? (
               <img
-                className="w-100 height300"
+                style={{ maxHeight: "300px" }}
+                className="w-100 img-fluid"
                 src={this.props.imageUrl}
                 alt="giphy"
               />
