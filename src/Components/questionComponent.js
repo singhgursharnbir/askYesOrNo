@@ -30,7 +30,7 @@ class questionComponent extends React.Component {
           <div className="col-md-6 col-sm-8">
             {this.props.imageUrl ? (
               <img
-                className="w-100 img-responsive image300"
+                className="w-100 img-responsive img-fluid image300"
                 src={this.props.imageUrl}
                 alt="giphy"
               />
